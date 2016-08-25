@@ -8,13 +8,13 @@
 
 4. To test error handling for getting user's gists, you can try to get the gists from a user who does not exists, for examplp, tring to get  http://127.0.0.1:8000/users/ustdionysusfdsafdas
 
-5.To test search api, try the command in terminal: 
+5. To test search api, try the command in terminal: 
 
    curl -H "Content-Type: application/json" -X POST -d '{"username": "justdionysus", "pattern": "TerbiumLabsChllenge_[0-9]+"}'  http://127.0.0.1:8000/api/v1/search
 
 6. To test error handling for the searching api, you can try the following requests:
 
-   fcurl -H "Content-Type: application/json" -X POST -d '{"username": "justdionysus"}'  http://127.0.0.1:8000/api/v1/search
+   curl -H "Content-Type: application/json" -X POST -d '{"username": "justdionysus"}'  http://127.0.0.1:8000/api/v1/search
 
    curl -H "Content-Type: application/json" -X POST -d '{"pattern": "TerbiumLabsChllenge_[0-9]+"}'  http://127.0.0.1:8000/api/v1/search
 
