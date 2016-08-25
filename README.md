@@ -1,3 +1,27 @@
+# Note
+
+1. Finished all required and bonus functions.
+
+2. Addtional python pageage - pymongo is used to store the search results into MongoDB (package dependency has been added into requirements.txt)
+
+3. To test pagination, try to get http://127.0.0.1:8000/users/tj?per_page=10&page=2 while the flask server is running.(you can change number for per_page and page as you want)
+
+4. To test error handling for getting user's gists, you can try to get the gists from a user who does not exists, for examplp, tring to get  http://127.0.0.1:8000/users/ustdionysusfdsafdas
+
+5.To test search api, try the command in terminal: 
+
+   curl -H "Content-Type: application/json" -X POST -d '{"username": "justdionysus", "pattern": "TerbiumLabsChllenge_[0-9]+"}'  http://127.0.0.1:8000/api/v1/search
+
+6. To test error handling for the searching api, you can try the following requests:
+
+   fcurl -H "Content-Type: application/json" -X POST -d '{"username": "justdionysus"}'  http://127.0.0.1:8000/api/v1/search
+
+   curl -H "Content-Type: application/json" -X POST -d '{"pattern": "TerbiumLabsChllenge_[0-9]+"}'  http://127.0.0.1:8000/api/v1/search
+
+   curl -H "Content-Type: application/json" -X POST -d '{"username": "justdionysusdasffdsa", "pattern": "TerbiumLabsChllenge_[0-9]+"}'  http://127.0.0.1:8000/api/v1/search
+
+7. To test storing search results into the database, make sure you have MongoDB installed and the service is running.Then uncomment the codes for storing in gistapi.py (check the codes in gistapi.py for more details)
+
 # gistapi
 Gistapi is a simple HTTP API server implemented in Flask for searching a user's public Github Gists. The gistapi code in this repository has 
 been left incomplete for you to finish.
@@ -8,18 +32,6 @@ There is a `requirements.txt` file for installing the required Python modules vi
 if you'd like to run the project as a docker container.  The `tests/` directory contains two very simple tests to get started.  The `gistapi/`
 directory contains the code you'll want to modify to implement the desired features.
 
-## Challenge
-The existing code already implements most of the Flask boilerplate for you. The main functionality is left for you to implement.  The goal is to 
-implement an endpoint that searches a user's Gists with a regular expression.  For example, I'd like to know all Gists for user `justdionysus` that 
-contain the pattern `import requests`. There is also a failing test that should pass once you've successfully implemented the search 
-process (and should illustrate the expected format of the response).  The code in `gistapi.py` contains some comments to help you find your way.
-
-To complete the challenge, you'll have to write some HTTP queries from `Gistapi` to the Github API to pull down each Gist for the target user.  
-Please don't use a github API client (i.e. using an HTTP request library like requests or aiohttp or urllib3 is fine but not PyGithub or similar).
-
-There are also a number of places in the code marked `# BONUS` where additional code would yield a more robust or performant service.  If you 
-finish the above quickly, feel free to investigate these added features or anything else you think might make for an interesting demo.  Please 
-don't work on the additional optional features before the main task is complete.
 
 ## Environment
 The project assumes Python 2.7 is installed and libffi and libssl development libraries are installed.  If you plan to use tox to run the tests, 

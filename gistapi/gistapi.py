@@ -8,8 +8,8 @@ module implements a Flask server exposing two endpoints: a simple ping
 endpoint to verify the server is up and responding and a search endpoint
 providing a search across all public Gists for a given Github account.
 """
-
-import requests, re, json, bson
+from bson.json_util import loads, dumps
+import requests, re, json
 from flask import Flask, jsonify, request, abort
 from pymongo import MongoClient
 
@@ -95,7 +95,6 @@ def search():
     result = {}
     gists =json.loads(gists_for_user(username))
     matche_result=[]
-    # print type(gists) is json
     # BONUS: Handle invalid users?
 
     for gist in gists:
@@ -104,25 +103,25 @@ def search():
                 print "######", gistfile_raw_url
                 m = re.search(r""+pattern, requests.get(gistfile_raw_url).text)
                 if m is not None:
-                    matche_result.append({'raw_url':gistfile_raw_url})                 
+                    matche_result.append(gist['html_url'])                 
                               
-            #print key, value
-        #m = re.search(pattern, gist)
-        # print m
         # REQUIRED: Fetch each gist and check for the pattern
         # BONUS: What about huge gists?
         # BONUS: Can we cache results in a datastore/db?
         #pass
-    client = MongoClient("mongodb://localhost:27017")
-    db = client.python_test
+    
     result['status'] = 'success'
     result['username'] = username
     result['pattern'] = pattern
     result['matches'] = matche_result
-    print type(bson.BSON.encode(result))
-    print bson.is_valid(bson.BSON.encode(result))
-    db.match_result.insert_one(bson.BSON.encode(result)).inserted_id
-    # print DBresult
+
+    #the follow code is used to store the match result into MongoDB,
+    #if you want to test this, make sure MongoDB has been installed
+    # and MongoDB service is running
+
+    # client = MongoClient("mongodb://localhost:27017")
+    # db = client.python_test
+    # db.match_result.insert_one(loads(dumps(result))).inserted_id
     return jsonify(result)
 
 

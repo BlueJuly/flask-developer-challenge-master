@@ -21,7 +21,7 @@ pyopenssl==0.15.1
 requests==2.9.1
 six==1.10.0
 Werkzeug==0.11.4          # via flask
-
+pymongo==3.3.0            #MongoDB driver for python
 # The following packages are commented out because they are
 # considered to be unsafe in a requirements file:
 # setuptools                # via cryptography
