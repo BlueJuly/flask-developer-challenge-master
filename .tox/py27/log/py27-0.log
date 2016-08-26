@@ -1,0 +1,9 @@
+actionid: py27
+msg: getenv
+cmdargs: ['/usr/local/opt/python/bin/python2.7', '-m', 'virtualenv', '--python', '/usr/local/bin/python2.7', 'py27']
+env: {'TERM_PROGRAM_VERSION': '361.1', 'LOGNAME': 'xiaochuandai', 'USER': 'xiaochuandai', 'PATH': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/Users/xiaochuandai', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'en_CA.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.8CsZElGEt4/Render', 'SHLVL': '1', 'SECURITYSESSIONID': '186a7', 'XPC_FLAGS': '0x0', 'PYTHONHASHSEED': '3845240302', 'TMPDIR': '/var/folders/9b/z7kb8_8x35z2gc60ylthc67m0000gn/T/', 'TERM_SESSION_ID': '3E9D86F9-509E-41E0-A98D-25F02D6573D1', 'XPC_SERVICE_NAME': '0', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.76nbGVtvmO/Listeners', 'VIRTUAL_ENV': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27', 'SHELL': '/bin/bash', '_': '/usr/local/bin/tox', 'OLDPWD': '/Users/xiaochuandai/Desktop/challenge-react-master', 'CLICOLOR': '1', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'PWD': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master'}
+
+New python executable in /Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin/python2.7
+Also creating executable in /Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin/python
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter /usr/local/bin/python2.7

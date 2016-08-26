@@ -102,5 +102,3 @@ You can check for PEP8 compliance and run a few other static analysis checks via
       congratulations :)
     ~/Projects/coding_challenge%
 ```
-# flask-developer-challenge-master
-# flask-developer-challenge-master

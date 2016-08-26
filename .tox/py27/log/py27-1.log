@@ -1,0 +1,42 @@
+actionid: py27
+msg: getenv
+cmdargs: [local('/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin/pip'), 'install', '-rrequirements.txt', 'pytest']
+env: {'TERM_PROGRAM_VERSION': '361.1', 'LOGNAME': 'xiaochuandai', 'USER': 'xiaochuandai', 'PATH': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/Users/xiaochuandai', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'en_CA.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.8CsZElGEt4/Render', 'SHLVL': '1', 'SECURITYSESSIONID': '186a7', 'XPC_FLAGS': '0x0', 'PYTHONHASHSEED': '3845240302', 'TMPDIR': '/var/folders/9b/z7kb8_8x35z2gc60ylthc67m0000gn/T/', 'TERM_SESSION_ID': '3E9D86F9-509E-41E0-A98D-25F02D6573D1', 'XPC_SERVICE_NAME': '0', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.76nbGVtvmO/Listeners', 'VIRTUAL_ENV': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27', 'SHELL': '/bin/bash', '_': '/usr/local/bin/tox', 'OLDPWD': '/Users/xiaochuandai/Desktop/challenge-react-master', 'CLICOLOR': '1', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'PWD': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master'}
+
+Collecting pytest
+  Downloading pytest-3.0.1-py2.py3-none-any.whl (169kB)
+Collecting cffi==1.5.2 (from -r requirements.txt (line 7))
+  Using cached cffi-1.5.2-cp27-cp27m-macosx_10_10_intel.whl
+Collecting cryptography==1.2.3 (from -r requirements.txt (line 8))
+  Using cached cryptography-1.2.3-cp27-cp27m-macosx_10_10_intel.whl
+Collecting enum34==1.1.2 (from -r requirements.txt (line 9))
+Collecting Flask==0.10.1 (from -r requirements.txt (line 10))
+Collecting gunicorn==19.4.5 (from -r requirements.txt (line 11))
+  Using cached gunicorn-19.4.5-py2.py3-none-any.whl
+Collecting idna==2.0 (from -r requirements.txt (line 12))
+  Using cached idna-2.0-py2.py3-none-any.whl
+Collecting ipaddress==1.0.16 (from -r requirements.txt (line 13))
+  Using cached ipaddress-1.0.16-py27-none-any.whl
+Collecting itsdangerous==0.24 (from -r requirements.txt (line 14))
+Collecting Jinja2==2.8 (from -r requirements.txt (line 15))
+  Using cached Jinja2-2.8-py2.py3-none-any.whl
+Collecting MarkupSafe==0.23 (from -r requirements.txt (line 16))
+Collecting ndg-httpsclient==0.4.0 (from -r requirements.txt (line 17))
+Collecting pyasn1==0.1.9 (from -r requirements.txt (line 18))
+  Using cached pyasn1-0.1.9-py2.py3-none-any.whl
+Collecting pycparser==2.14 (from -r requirements.txt (line 19))
+Collecting pyopenssl==0.15.1 (from -r requirements.txt (line 20))
+  Using cached pyOpenSSL-0.15.1-py2.py3-none-any.whl
+Collecting requests==2.9.1 (from -r requirements.txt (line 21))
+  Using cached requests-2.9.1-py2.py3-none-any.whl
+Collecting six==1.10.0 (from -r requirements.txt (line 22))
+  Using cached six-1.10.0-py2.py3-none-any.whl
+Collecting Werkzeug==0.11.4 (from -r requirements.txt (line 23))
+  Using cached Werkzeug-0.11.4-py2.py3-none-any.whl
+Collecting pymongo==3.3.0 (from -r requirements.txt (line 24))
+  Using cached pymongo-3.3.0-cp27-cp27m-macosx_10_9_intel.whl
+Collecting py>=1.4.29 (from pytest)
+  Downloading py-1.4.31-py2.py3-none-any.whl (81kB)
+Requirement already satisfied (use --upgrade to upgrade): setuptools>=1.0 in ./.tox/py27/lib/python2.7/site-packages (from cryptography==1.2.3->-r requirements.txt (line 8))
+Installing collected packages: py, pytest, pycparser, cffi, six, enum34, ipaddress, pyasn1, idna, cryptography, MarkupSafe, Jinja2, Werkzeug, itsdangerous, Flask, gunicorn, pyopenssl, ndg-httpsclient, requests, pymongo
+Successfully installed Flask-0.10.1 Jinja2-2.8 MarkupSafe-0.23 Werkzeug-0.11.4 cffi-1.5.2 cryptography-1.2.3 enum34-1.1.2 gunicorn-19.4.5 idna-2.0 ipaddress-1.0.16 itsdangerous-0.24 ndg-httpsclient-0.4.0 py-1.4.31 pyasn1-0.1.9 pycparser-2.14 pymongo-3.3.0 pyopenssl-0.15.1 pytest-3.0.1 requests-2.9.1 six-1.10.0

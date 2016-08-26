@@ -1,0 +1,16 @@
+actionid: py27
+msg: installpkg
+cmdargs: [local('/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin/pip'), 'install', '-U', '--no-deps', '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/dist/gistapi-0.1.0.zip']
+env: {'TERM_PROGRAM_VERSION': '361.1', 'LOGNAME': 'xiaochuandai', 'USER': 'xiaochuandai', 'PATH': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/Users/xiaochuandai', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'en_CA.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.8CsZElGEt4/Render', 'SHLVL': '1', 'SECURITYSESSIONID': '186a7', 'XPC_FLAGS': '0x0', 'PYTHONHASHSEED': '74112560', 'TMPDIR': '/var/folders/9b/z7kb8_8x35z2gc60ylthc67m0000gn/T/', 'TERM_SESSION_ID': '3E9D86F9-509E-41E0-A98D-25F02D6573D1', 'XPC_SERVICE_NAME': '0', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.76nbGVtvmO/Listeners', 'VIRTUAL_ENV': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master/.tox/py27', 'SHELL': '/bin/bash', '_': '/usr/local/bin/tox', 'OLDPWD': '/Users/xiaochuandai/Desktop/challenge-react-master', 'CLICOLOR': '1', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'PWD': '/Users/xiaochuandai/Desktop/flask-developer-challenge-master'}
+
+Processing ./.tox/dist/gistapi-0.1.0.zip
+Building wheels for collected packages: gistapi
+  Running setup.py bdist_wheel for gistapi: started
+  Running setup.py bdist_wheel for gistapi: finished with status 'done'
+  Stored in directory: /Users/xiaochuandai/Library/Caches/pip/wheels/41/8c/d2/efdf290f7d94d023b05f3093f54241dd625f0e803b8c5944b0
+Successfully built gistapi
+Installing collected packages: gistapi
+  Found existing installation: gistapi 0.1.0
+    Uninstalling gistapi-0.1.0:
+      Successfully uninstalled gistapi-0.1.0
+Successfully installed gistapi-0.1.0
